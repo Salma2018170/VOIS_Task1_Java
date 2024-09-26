@@ -4,7 +4,6 @@ This repository contains automated test cases for Amazon's website using Seleniu
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -17,11 +16,6 @@ This project automates the following scenarios on Amazon:
 2. **Scenario 2**: Apply filters for "Headphones" and "Grocery", select a discount, navigate to the fourth page, choose an item, add it to the cart, and verify its presence in the cart.
 
 The tests are designed to run with a browser resolution of 1024x768 pixels and utilize best practice coding standards for maintainability.
-
-## Features
-- **Search and Add to Cart**: Automates the process of searching for items and adding them to the cart.
-- **Filter and Discount Application**: Handles filtering and applying discounts on items.
-- **Page Navigation**: Navigates through pages and selects items.
 
 ## Technologies Used
 - **Java**: Programming language used for writing test scripts.
@@ -42,14 +36,9 @@ To run these tests locally, follow these steps:
     mvn install
     ```
 
-3. **Download and set up ChromeDriver:**
-    - Download from [ChromeDriver website](https://sites.google.com/a/chromium.org/chromedriver/).
-    - Set the path to `chromedriver` in the `System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");` line in the code.
-
 ## Usage
 1. **Open the project in your preferred IDE** (e.g., IntelliJ IDEA, Eclipse).
-2. **Ensure that `chromedriver` is correctly configured** in the project.
-3. **Run the test cases** using TestNG.
+2. **Run the test cases** using TestNG.
 
 ## Running the Tests
 To run the tests:
@@ -63,7 +52,7 @@ To run the tests:
     - Right-click on the test class `AmazonAutomation` and select **Run 'AmazonAutomation'**.
 
 ## File Descriptions
-- **AmazonAutomation.java**: Contains the test scenarios for automating tasks on Amazon.
+- **scenarios**: Contains the test scenarios for automating tasks on Amazon.
 - **pom.xml**: Maven configuration file for managing project dependencies. Below is the content of the `pom.xml` file used in this project:
 
     ```xml
